@@ -79,8 +79,8 @@ class Producer:
 class _KafkaState(object):
     """Remembers configuration for the (db, app) tuple."""
 
-    def __init__(self, config):
-        self.config = config
+    def __init__(self, kafka):
+        self.kafka = kafka
 
 class Kafka(object):
     app = None
