@@ -5,6 +5,8 @@ from confluent_kafka import KafkaException
 from time import time
 from threading import Thread
 
+__version__ = '0.1.0'
+
 class AIOProducer:
     def __init__(self, configs, loop=None):
         self._loop = loop or asyncio.get_event_loop()
